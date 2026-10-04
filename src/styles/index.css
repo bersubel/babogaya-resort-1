@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global resets for smooth GSAP animations */
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  background-color: #F5F5DC; /* The 'sand' color from your tailwind config */
+  color: #2C4C3B; /* The 'forest' green text */
+}
+/* Only hide the default cursor on devices with a mouse (pointer: fine) */
+@media (pointer: fine) {
+  body, a, button, img {
+    cursor: none !important;
+  }
+}
