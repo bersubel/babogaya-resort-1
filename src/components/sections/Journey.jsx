@@ -4,9 +4,6 @@ import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import { MotionPathPlugin } from 'gsap/MotionPathPlugin';
 
-// 1. Import the images directly so Vite bundles them
-import addisImg from '../../assets/images/addis.png';
-import babogayaImg from '../../assets/images/l1.png';
 
 export default function Journey() {
   const sectionRef = useRef(null);
@@ -190,9 +187,8 @@ export default function Journey() {
               Addis Ababa
             </span>
             <div ref={addisPopupRef} className="absolute bottom-full mb-6 w-40 aspect-video rounded-xl overflow-hidden border border-[#F4F0E8]/10 shadow-[0_20px_40px_rgba(0,0,0,0.8)]">
-              {/* Use the imported variable here */}
-              <img src={addisImg} alt="Addis Ababa" className="w-full h-full object-cover" />
-            </div>
+  <img src="/media/addis.png" alt="Addis Ababa" className="w-full h-full object-cover" />
+</div>
           </div>
 
           {/* POINT C: Bishoftu */}
@@ -204,9 +200,8 @@ export default function Journey() {
               Bishoftu
             </span>
             <div ref={babogayaPopupRef} className="absolute bottom-full mb-6 w-40 aspect-[4/5] rounded-xl overflow-hidden border border-[#F4F0E8]/10 shadow-[0_20px_40px_rgba(0,0,0,0.8)]">
-              {/* Use the imported variable here */}
-              <img src={babogayaImg} alt="Babogaya Resort" className="w-full h-full object-cover" />
-            </div>
+  <img src="/media/l1.png" alt="Babogaya Resort" className="w-full h-full object-cover" />
+</div>
           </div>
 
           {/* VEHICLE 1: Plane Icon */}
